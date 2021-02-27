@@ -1,0 +1,7 @@
+Client ID
+491930319304-ve6l0b34244jblqhr8gbl6udgo8jjcdp.apps.googleusercontent.com
+
+Secreto del cliente
+Qa4N_iFbZL1CU5ebaUMC_cXA
+
+flutter run -d chrome --web-hostname localhost --web-port 64240
