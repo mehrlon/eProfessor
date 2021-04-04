@@ -33,7 +33,7 @@ class _AuthDialogState extends State<AuthDialog> {
                       flex: 1,
                       child: Container(
                         width: double.maxFinite,
-                        child: FlatButton(
+                        child: TextButton(
                           onPressed: () {},
                           child: Text(
                             'Log in',
@@ -46,7 +46,7 @@ class _AuthDialogState extends State<AuthDialog> {
                       flex: 1,
                       child: Container(
                         width: double.maxFinite,
-                        child: FlatButton(
+                        child: TextButton(
                           onPressed: () {},
                           child: Text(
                             'Sign up',
