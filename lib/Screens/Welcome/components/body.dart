@@ -1,3 +1,4 @@
+import 'package:eprofessor/Screens/Login/login_screen.dart';
 import 'package:eprofessor/Screens/Welcome/components/background.dart';
 import 'package:eprofessor/components/rounded_button.dart';
 import 'package:flutter/material.dart';
@@ -18,15 +19,22 @@ class Body extends StatelessWidget {
               "Bienvenido a EProfessor",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.05),
             SvgPicture.asset(
               "assets/icons/eprofessor_logo.svg",
               height: size.height * 0.45,
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.05),
             RoundedButton(
               text: "INGRESAR",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return LoginScreen();
+                  }),
+                );
+              },
             ),
             RoundedButton(
               text: "REGISTRARSE",
